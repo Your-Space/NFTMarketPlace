@@ -1,0 +1,199 @@
+@page "/"
+@using Nethereum.UI;
+@using Nethereum.Metamask;
+@using Nethereum.Erc20.Blazor;
+@using Nethereum.Metamask.Blazor;
+@inject IJSRuntime jsRuntime;
+@using Nethereum.JsonRpc.Client;
+
+@inject IEthereumHostProvider _ethereumHostProvider;
+@inject NethereumSiweAuthenticatorService  _nethereumSiweAuthenticatorService;
+@inject NavigationManager _navigationManager
+@inject TestExample _testExample;
+@using Nethereum.Web3;
+@using Nethereum.Hex.HexTypes;
+@using Nethereum.Siwe.Core
+@using System.Numerics
+@using Microsoft.JSInterop
+@using Newtonsoft.Json
+@using NftContractHandler
+@using NftProject.Models
+@using System.IO
+@using System.Net
+@using System.Runtime.CompilerServices
+@using Nethereum.Model
+@using Nethereum.Web3.Accounts.Managed
+
+@if (EthereumAvailable == true && !string.IsNullOrEmpty(SelectedAccount))
+{
+    <div class="card m-1">
+        <div class="card-body">
+            <div class="row">
+                <label class="col-sm-3 col-form-label-lg">Selected Account:</label>
+                <div class="col-sm-6">
+                    @SelectedAccount
+                    <small id="selectedAccountHelp" class="form-text text-muted">The selected account is bound to the host (ie Metamask) on change</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+@*     @if (col()) *@
+@*     { *@
+        <div class="row">
+            @foreach (var item in Nfts)
+            {
+                <div class="col-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">
+                                <label style="font-size: 23px;color: steelblue">@item.NftMetadata.Name</label>
+                            </h4>
+                        </div>
+                        <img src="@item.NftMetadata.FileUrl" alt="Card Image" class="card-img-top" style="height: 300px;"/>
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <label style="font-size: 20px;color: #a51313"><b>Price : @item.NftMetadata.Price</b></label>
+                                </div>
+                                <a asp-action="Detail" asp-route-id="@item.TokenId" class="btn btn-success pull-left btn-outline-info">Details</a>
+
+                                @* <input type="submit" asp-controller="Nft" asp-action="Index" value="Buy" class="btn btn-success pull-right btn-outline-info"/> *@
+                                <form asp-action="MyNfts" method="post" enctype="multipart/form-data">
+
+                                    <button type="submit" asp-route-id="@item.TokenId" asp-route-price="@item.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">List Nft</button>
+                                </form>
+                                <component type="typeof(BuyButton)" render-mode="ServerPrerendered" param-TokenId="@item.TokenId.ToString()" param-Price="@item.NftMetadata.Price"/>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+@* *@
+@*             $1$ <component type="typeof(ShowNft)" render-mode="ServerPrerendered"/> #1# *@
+         </div>
+     
+@* *@
+@* *@
+} else
+{
+<div>
+    Please connect to Ethereum !
+</div>
+}
+
+@code{
+    public IEnumerable<NftViewModel> Nfts { get; set; }
+    bool EthereumAvailable { get; set; }
+        string SelectedAccount { get; set; }
+        BigInteger SelectedChainId { get; set; }
+
+            protected override async Task OnAfterRenderAsync(bool firstTime)
+        {
+            if (firstTime)
+            {
+        
+                _ethereumHostProvider.SelectedAccountChanged += HostProvider_SelectedAccountChanged;
+                _ethereumHostProvider.NetworkChanged += HostProvider_NetworkChanged;
+                _ethereumHostProvider.EnabledChanged += HostProviderOnEnabledChanged;
+
+                EthereumAvailable = await _ethereumHostProvider.CheckProviderAvailabilityAsync();
+            }
+        }
+
+    public bool col()
+    {
+        return collect().Result;
+    }
+
+    public async Task<bool> collect()
+    {
+        if (EthereumAvailable == true && !string.IsNullOrEmpty(SelectedAccount))
+        {
+        //var web3 = new Web3();
+            //Account account = new Account();
+            //ManagedAccount account = new ManagedAccount();
+            
+            _testExample.Web3 = await _ethereumHostProvider.GetWeb3Async();
+            // _testExample.Web3.TransactionManager = _ethereumHostProvider.GetWeb3Async().Result.TransactionManager;
+            // _testExample.Web3.TransactionManager.Client = _ethereumHostProvider.GetWeb3Async().Result.TransactionManager.Client;
+            // // _testExample.Web3.Client = _ethereumHostProvider.GetWeb3Async().Result.TransactionManager.Client;
+           // _testExample.Web3.TransactionManager = Client;
+            // var ListingPrice = _testExample.Service.GetListingPriceQueryAsync().Result;
+            Console.WriteLine("Here " + await _testExample.Service.TokenURIQueryAsync(6));
+    //_testExample.Service.FetchMyNFTsQueryAsync().
+            Console.WriteLine("Another ");
+            var a = await _testExample.Service.GetListingPriceQueryAsync();
+            Console.Write(a.ToString());
+            var m = await _testExample.Service.FetchMyNFTsQueryAsync();
+            var marketItems = m.ReturnValue1;
+            Console.WriteLine(marketItems.ToString());
+            Console.WriteLine(111);    
+            List<NftViewModel> metaSet = new List<NftViewModel>(marketItems.Count); //I NEED TOKEN ID
+            foreach (var item in marketItems)
+            {
+                NftViewModel tmp = new NftViewModel();
+                tmp.NftMetadata = await ReadJsonFromWeb(item.TokenId);
+                tmp.TokenId = item.TokenId;
+                metaSet.Add(tmp); 
+            }
+            Nfts = metaSet;
+            return true;
+        }
+        return false;
+    }
+
+    private async Task<NftMetadataModel> ReadJsonFromWeb(BigInteger id)
+    {
+        string uri = await _testExample.Service.TokenURIQueryAsync(id);
+
+    //reading metadata json from web 
+        HttpWebRequest request = WebRequest.Create(uri) as HttpWebRequest;
+        WebResponse resp = request.GetResponse();
+        StreamReader reader = new StreamReader(resp.GetResponseStream());
+        string jsonText = reader.ReadToEnd();
+
+        NftMetadataModel NftMetadata = JsonConvert.DeserializeObject<NftMetadataModel>(jsonText);
+        return NftMetadata;
+    }
+    
+        private async Task HostProviderOnEnabledChanged(bool enabled)
+        {
+            if (enabled)
+            {
+                await GetChainId();
+                this.StateHasChanged();
+            }
+        }
+
+        private async Task GetChainId()
+        {
+            var web3 = await _ethereumHostProvider.GetWeb3Async();
+            var chainId = await web3.Eth.ChainId.SendRequestAsync();
+            SelectedChainId = (BigInteger) chainId.Value;
+        }
+
+        private async Task HostProvider_SelectedAccountChanged(string account)
+        {
+
+            SelectedAccount = account;
+            await GetChainId();
+
+            await collect();
+
+            this.StateHasChanged();
+        }
+
+        private async Task HostProvider_NetworkChanged(int chainId)
+        {
+            SelectedChainId = chainId;
+            this.StateHasChanged();
+            await Task.CompletedTask;
+        }
+        
+
+}
+
+
+

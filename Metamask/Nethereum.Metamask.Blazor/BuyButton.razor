@@ -1,0 +1,86 @@
+@using Nethereum.UI
+@using System.Numerics
+@using NftContractHandler
+@using Microsoft.AspNetCore.Components.Forms
+@using Nethereum.Erc20.Blazor
+@using Nethereum.Hex.HexTypes
+@using Nethereum.StandardTokenEIP20.ContractDefinition
+@using Nethereum.Web3
+@using NftProject.Contracts.NFTMarketplace.ContractDefinition
+@inject TestExample _testExample;
+@inject IEthereumHostProvider _ethereumHostProvider;
+
+<EditForm Model="transferModel" OnValidSubmit="@Index">
+    <div class="form-group">
+        <button type="submit" class="btn btn-success pull-right btn-outline-info">Buy</button>
+        @* @onclick="@CheckMetamask" *@
+    </div>
+    
+</EditForm>
+
+@code {
+    ERC20TransferModel transferModel = new ERC20TransferModel();
+    [Parameter]
+    public string TokenId { get; set; }
+    [Parameter]
+    public string Price { get; set; }
+    
+    public async Task Index()
+    {
+        if (MetamaskAvailable && string.IsNullOrEmpty(SelectedAccount))
+            await EnableEthereumAsync();
+        //Web3 hostProviderWeb3 = await _ethereumHostProvider.GetWeb3Async();
+        if (!string.IsNullOrEmpty(SelectedAccount))
+        {
+            _testExample.Web3 = await _ethereumHostProvider.GetWeb3Async();
+            await _testExample.Service.CreateMarketSaleRequestAndWaitForReceiptAsync(GetCreateMarketSaleFunction());
+        }
+
+    //    await _testExample.CreateMarketSale(TokenId, BigInteger.Parse(Price));
+    // var web3 = await _ethereumHostProvider.GetWeb3Async();
+    // var contractHandler = web3.Eth.GetContractQueryHandler<CreateMarketSaleFunction>();
+    // var createMarkerSaleMessage = new CreateMarketSaleFunction()
+    // {
+    //     TokenId =  (BigInteger) TokenId,
+    //     AmountToSend = BigInteger.Parse(Price)
+    // };
+    //await contractHandler.SendRequestAsync(_testExample.ContractAddress, createMarkerSaleMessage);
+    //await _testExample.CreateMarketSale(TokenId, BigInteger.Parse(Price));
+    }
+    
+    public CreateMarketSaleFunction GetCreateMarketSaleFunction()
+    {
+        return new CreateMarketSaleFunction()
+        {
+            TokenId = BigInteger.Parse(TokenId),
+            AmountToSend = BigInteger.Parse(Price)
+        };
+    }
+
+    bool MetamaskAvailable { get; set; }
+    string SelectedAccount { get; set; }
+    protected string AuthenticatedAccount { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _ethereumHostProvider.SelectedAccountChanged += MetamaskHostProvider_SelectedAccountChanged;
+            MetamaskAvailable = await _ethereumHostProvider.CheckProviderAvailabilityAsync();
+
+            StateHasChanged();
+        }
+    }
+
+    private async Task MetamaskHostProvider_SelectedAccountChanged(string account)
+    {
+        SelectedAccount = account;
+        this.StateHasChanged();
+    }
+
+    protected async Task EnableEthereumAsync()
+    {
+        SelectedAccount = await _ethereumHostProvider.EnableProviderAsync();
+    }
+
+}

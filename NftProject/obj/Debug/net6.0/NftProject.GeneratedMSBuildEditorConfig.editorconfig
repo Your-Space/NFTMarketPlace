@@ -1,0 +1,104 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NftProject
+build_property.RootNamespace = NftProject
+build_property.ProjectDir = D:\youtube tutorial\Shop\NftProject\NftProject\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\youtube tutorial\Shop\NftProject\NftProject
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Auction/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Auction/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Auction/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Auction/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Auction/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Auction/SaleDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxTYWxlRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Nft/AuctionSale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0XEF1Y3Rpb25TYWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Nft/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Nft/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0XERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Nft/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Nft/MyNfts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0XE15TmZ0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Nft/NftListed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0XE5mdExpc3RlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Nft/SaleDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmZ0XFNhbGVEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/youtube tutorial/Shop/NftProject/NftProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8gjgoab28k

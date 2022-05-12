@@ -1,0 +1,52 @@
+@model NftProject.Models.AuctionInfoModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>AuctionInfoModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="TokenId" class="control-label"></label>
+                <input asp-for="TokenId" class="form-control" />
+                <span asp-validation-for="TokenId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MinimalBid" class="control-label"></label>
+                <input asp-for="MinimalBid" class="form-control" />
+                <span asp-validation-for="MinimalBid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MinimalBidStep" class="control-label"></label>
+                <input asp-for="MinimalBidStep" class="form-control" />
+                <span asp-validation-for="MinimalBidStep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalDate" class="control-label"></label>
+                <input asp-for="FinalDate" class="form-control" />
+                <span asp-validation-for="FinalDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

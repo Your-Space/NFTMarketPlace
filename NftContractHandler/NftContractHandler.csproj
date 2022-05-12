@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Nethereum.Web3" Version="4.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Contracts\bin\NFTMarketplace-solc-output.json" />
+      <Content Include="Contracts\bin\NFTMarketplace.json" />
+      <Content Include="Contracts\package-lock.json" />
+      <Content Include="Contracts\package.json" />
+    </ItemGroup>
+
+</Project>

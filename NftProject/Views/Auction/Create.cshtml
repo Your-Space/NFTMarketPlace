@@ -1,0 +1,152 @@
+@model AuctionViewModel;
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-info">Nft Detail</h2>
+<form method="post" enctype="multipart/form-data">
+    <div class="p-4 rounded border row">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+
+        </div>
+        <div class="col-8">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="NftViewModel.NftMetadata.Name"></label>
+                </div>
+                <div class="col-8">
+                    <input type="hidden" asp-for="NftViewModel.MarketData.TokenId" />
+                    <input asp-for="NftViewModel.NftMetadata.Name" readonly="readonly" class="form-control" />
+                </div>
+                <span asp-validation-for="NftViewModel.NftMetadata.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="NftViewModel.NftMetadata.Price"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="NftViewModel.NftMetadata.Price" readonly="readonly" class="form-control" />
+                </div>
+                <span asp-validation-for="NftViewModel.NftMetadata.Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="NftViewModel.NftMetadata.Description"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="NftViewModel.NftMetadata.Description" readonly="readonly" class="form-control" />
+                </div>
+                <span asp-validation-for="NftViewModel.NftMetadata.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="NftViewModel.MarketData.Owner"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="NftViewModel.MarketData.Owner" readonly="readonly" class="form-control" />
+                </div>
+                <span asp-validation-for="NftViewModel.MarketData.Owner" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="NftViewModel.MarketData.Seller"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="NftViewModel.MarketData.Seller" readonly="readonly" class="form-control" />
+                </div>
+                <span asp-validation-for="NftViewModel.MarketData.Seller" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="NftViewModel.MarketData.Sold"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="NftViewModel.MarketData.Sold" readonly="readonly" class="form-control" />
+                </div>
+                <span asp-validation-for="NftViewModel.MarketData.Sold" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="NftViewModel.MarketData.TokenId"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="NftViewModel.MarketData.TokenId" readonly="readonly" class="form-control" />
+                </div>
+                <span asp-validation-for="NftViewModel.MarketData.TokenId" class="text-danger"></span>
+            </div>
+            
+
+            <div class="form-group row">
+                <div class="col-4">
+
+                </div>
+                <div class="col-8">
+
+                </div>
+
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-success">Back to List</a>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            <img src="@Model.NftViewModel.NftMetadata.FileUrl" width="100%" height="250px" style="border-radius: 5px;border: 1px solid #efefef" />
+        </div>
+
+    </div>
+</form>
+
+<h1>Create</h1>
+
+<h4>AuctionInfoModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AuctionInfo.MinimalBid" class="control-label"></label>
+                <input asp-for="AuctionInfo.MinimalBid" class="form-control" />
+                <span asp-validation-for="AuctionInfo.MinimalBid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuctionInfo.MinimalBidStep" class="control-label"></label>
+                <input asp-for="AuctionInfo.MinimalBidStep" class="form-control" />
+                <span asp-validation-for="AuctionInfo.MinimalBidStep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuctionInfo.StartDate" class="control-label"></label>
+                <input asp-for="AuctionInfo.StartDate" class="form-control" />
+                <span asp-validation-for="AuctionInfo.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuctionInfo.FinalDate" class="control-label"></label>
+                <input asp-for="AuctionInfo.FinalDate" class="form-control" />
+                <span asp-validation-for="AuctionInfo.FinalDate" class="text-danger"></span>
+            </div>
+            
+            @* next *@
+            <div class="form-group">
+                <label asp-for="AuctionSale.Price" class="control-label"></label>
+                <input asp-for="AuctionSale.Price" class="form-control" />
+                <span asp-validation-for="AuctionSale.Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

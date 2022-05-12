@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NftProject", "NftProject\NftProject.csproj", "{E4B6F626-1C05-4885-AE6A-181064DCE28B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperProject.Server", "..\..\..\Metamask\SuperProject.Server\SuperProject.Server.csproj", "{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum.Erc20.Blazor", "..\..\..\Metamask\Nethereum.Erc20.Blazor\Nethereum.Erc20.Blazor.csproj", "{32BB168A-3D7A-4671-BAA7-866C21A4AF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum.Metamask", "..\..\..\Metamask\Nethereum.Metamask\Nethereum.Metamask.csproj", "{DF3E1266-ED68-4139-A1E1-580CF9E81845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum.Metamask.Blazor", "..\..\..\Metamask\Nethereum.Metamask.Blazor\Nethereum.Metamask.Blazor.csproj", "{6543C925-B26E-4A3E-9942-388596E099BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum.UI", "..\..\..\Metamask\Nethereum.UI\Nethereum.UI.csproj", "{DAE10EED-6A79-4562-BA71-C4B2EB15AAA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NftContractHandler", "NftContractHandler\NftContractHandler.csproj", "{9D362ECF-CB30-40DF-AE78-3BF795A2637A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NftApi", "NftApi\NftApi.csproj", "{63F683E5-4497-425C-8717-E42EBA193030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4B6F626-1C05-4885-AE6A-181064DCE28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B6F626-1C05-4885-AE6A-181064DCE28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B6F626-1C05-4885-AE6A-181064DCE28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B6F626-1C05-4885-AE6A-181064DCE28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32BB168A-3D7A-4671-BAA7-866C21A4AF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BB168A-3D7A-4671-BAA7-866C21A4AF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BB168A-3D7A-4671-BAA7-866C21A4AF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BB168A-3D7A-4671-BAA7-866C21A4AF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3E1266-ED68-4139-A1E1-580CF9E81845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3E1266-ED68-4139-A1E1-580CF9E81845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3E1266-ED68-4139-A1E1-580CF9E81845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3E1266-ED68-4139-A1E1-580CF9E81845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6543C925-B26E-4A3E-9942-388596E099BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6543C925-B26E-4A3E-9942-388596E099BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6543C925-B26E-4A3E-9942-388596E099BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6543C925-B26E-4A3E-9942-388596E099BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE10EED-6A79-4562-BA71-C4B2EB15AAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE10EED-6A79-4562-BA71-C4B2EB15AAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE10EED-6A79-4562-BA71-C4B2EB15AAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE10EED-6A79-4562-BA71-C4B2EB15AAA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D362ECF-CB30-40DF-AE78-3BF795A2637A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D362ECF-CB30-40DF-AE78-3BF795A2637A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D362ECF-CB30-40DF-AE78-3BF795A2637A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D362ECF-CB30-40DF-AE78-3BF795A2637A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F683E5-4497-425C-8717-E42EBA193030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F683E5-4497-425C-8717-E42EBA193030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F683E5-4497-425C-8717-E42EBA193030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F683E5-4497-425C-8717-E42EBA193030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

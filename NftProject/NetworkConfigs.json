@@ -1,0 +1,12 @@
+{
+  "networks": {
+    "mumbai": {
+      "url": "https://polygon-mumbai.infura.io/v3/57ac44fec97144dbb3589a9c2e41bd8c",
+      "accounts": ["1e0e84f3ed2da30e1c274aae90a9859fdfaa4cb7b86cac4efde77476f1b94b90"]
+    },
+    "mainnet": {
+      "url": "https://polygon-mainnet.infura.io/v3/57ac44fec97144dbb3589a9c2e41bd8c",
+      "accounts": ["1e0e84f3ed2da30e1c274aae90a9859fdfaa4cb7b86cac4efde77476f1b94b90"]
+    }
+  }
+}
