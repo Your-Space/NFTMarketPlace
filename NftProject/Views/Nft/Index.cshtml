@@ -1,10 +1,5 @@
-@using Nethereum.Erc20.Blazor
-@using Nethereum.Metamask.Blazor
-@using Newtonsoft.Json
 @using NftContractHandler
-@using System.Net
-@using System.Numerics
-@model IEnumerable<NftViewModel>
+@model IEnumerable<NftViewItemModel>
 @inject TestExample _testExample;
 
 @{
@@ -27,38 +22,33 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-4">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        <label style="font-size: 23px;color: steelblue">@item.NftMetadata.Name</label>
-                    </h4>
-                </div>
-                <img src="@item.NftMetadata.FileUrl" alt="Card Image" class="card-img-top" style="height: 300px;"/>
-                <div class="card-header">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <label style="font-size: 20px;color: #a51313"><b>Price : @item.NftMetadata.Price</b></label>
-                        </div>
-                        <a asp-action="Detail" asp-route-id="@item.TokenId" class="btn btn-success pull-left btn-outline-info">Details</a>
-                        @* @(await Html.RenderComponentAsync<BuyButton>(RenderMode.ServerPrerendered, new {TokenId = item.TokenId, Price = item.NftMetadata.Price})) *@
-                        @* <input type="submit" asp-controller="Nft" asp-action="Index" value="Buy" class="btn btn-success pull-right btn-outline-info"/> *@
-                     <form asp-action="Index" method="post" enctype="multipart/form-data">
-                            <button type="submit" asp-route-id="@item.TokenId" asp-route-price="@item.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Get</button>
-                        </form>
-                        @* <BuyButton></BuyButton> *@
-                        
-                        <component type="typeof(BuyButton)" render-mode="ServerPrerendered" param-TokenId="@item.TokenId.ToString()" param-Price="@item.NftMetadata.Price"/>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @Html.Partial("_NftPartial", item)
     }
-    
-    
-    @(await Html.RenderComponentAsync<Test>(RenderMode.ServerPrerendered))
-    @* @(await Html.RenderComponentAsync<Erc20Transfer>(RenderMode.ServerPrerendered)) *@
-    @* blazor component which always runs js    *@
-    @* <component type="typeof(BuyButton)" render-mode="ServerPrerendered"/> *@
-    
 </div>
+
+@* <div class="col-4"> *@
+@*     <div class="card mb-4"> *@
+@*         <div class="card-header"> *@
+@*             <h4 class="my-0 font-weight-normal"> *@
+@*                 <label style="font-size: 23px;color: steelblue">@item.NftMetadata.Name</label> *@
+@*             </h4> *@
+@*         </div> *@
+@*         <img src="@item.NftMetadata.FileUrl" alt="Card Image" class="card-img-top" style="height: 300px;"/> *@
+@*         <div class="card-header"> *@
+@*             <div class="d-flex justify-content-between align-items-center"> *@
+@*                 <div class="btn-group"> *@
+@*                     <label style="font-size: 20px;color: #a51313"><b>Price : @item.NftMetadata.Price</b></label> *@
+@*                 </div> *@
+@*                 <a asp-action="Detail" asp-route-id="@item.TokenId" class="btn btn-success pull-left btn-outline-info">Details</a> *@
+@*                 $1$ @(await Html.RenderComponentAsync<BuyButton>(RenderMode.ServerPrerendered, new {TokenId = item.TokenId, Price = item.NftMetadata.Price})) #1# *@
+@*                 $1$ <input type="submit" asp-controller="Nft" asp-action="Index" value="Buy" class="btn btn-success pull-right btn-outline-info"/> #1# *@
+@*                 <form asp-action="Index" method="post" enctype="multipart/form-data"> *@
+@*                     <button type="submit" asp-route-id="@item.TokenId" asp-route-price="@item.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Get</button> *@
+@*                 </form> *@
+@*                 $1$ <BuyButton></BuyButton> #1# *@
+@*                          *@
+@*                 <component type="typeof(BuyButton)" render-mode="ServerPrerendered" param-TokenId="@item.TokenId.ToString()" param-Price="@item.NftMetadata.Price"/> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@

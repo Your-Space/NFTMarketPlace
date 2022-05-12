@@ -1,0 +1,34 @@
+@using Nethereum.Metamask.Blazor
+@using System.Numerics
+@model NftViewItemModel
+
+@{ string action = ViewContext.RouteData.Values["action"] as string;}
+
+<div class="col-4">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">
+                <label style="font-size: 23px;color: steelblue">@Model.NftMetadata.Name</label>
+            </h4>
+        </div>
+        <img src="@Model.NftMetadata.FileUrl" alt="Card Image" class="card-img-top" style="height: 300px;"/>
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-Models-center">
+                <div class="btn-group">
+                    <label style="font-size: 20px;color: #a51313"><b>Price : @Model.NftMetadata.Price</b></label>
+                </div>
+                <a asp-action="Detail" asp-route-id="@Model.MarketData.TokenId" asp-route-nftaction="@action" class="btn btn-success pull-left btn-outline-info">Details</a>
+
+                @if (action.Equals("Index"))
+                {
+                    <form asp-action="Index" method="post" enctype="multipart/form-data">
+                        <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Buy</button>
+                    </form>
+                } else if (action.Equals("MyNfts"))
+                {
+                    <a asp-controller="Sales" asp-action="Index"asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-success pull-right btn-outline-info">List</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

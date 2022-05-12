@@ -1,0 +1,37 @@
+@model NftViewItemModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2 class="text-info">Nft Detail</h2>
+
+@Html.Partial("_NftDetailsPartial", Model)
+
+@* list nft *@
+
+<form asp-action="ClassicSale" method="post" enctype="multipart/form-data">
+
+    <div class="p-4 rounded border">
+
+        <h3>@ViewBag.message</h3>
+        
+        <div class="form-group row">
+            <div class="col-2">
+                <label>Price: </label>
+            </div>
+            <div class="col-5">
+                @Html.Editor("Price", new { htmlAttributes = new { @class = "form-control"} })
+            </div>
+            <span class="text-danger"> @ViewBag.ErrorMessage  </span>
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Save" />
+            <a asp-controller="Nft" asp-action="MyNfts" class="btn btn-success">Back to List</a>
+        </div>
+
+    </div>
+    
+</form>

@@ -1,4 +1,4 @@
-@model IEnumerable<NftViewModel>
+@model IEnumerable<NftViewItemModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -20,28 +20,6 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-4">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">
-                        <label style="font-size: 23px;color: steelblue">@item.NftMetadata.Name</label>
-                    </h4>
-                </div>
-                <img src="@item.NftMetadata.FileUrl" alt="Card Image" class="card-img-top" style="height: 300px;"/>
-                <div class="card-header">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <label style="font-size: 20px;color: #a51313"><b>Price : @item.NftMetadata.Price</b></label>
-                        </div>
-                        <a asp-action="Detail" asp-route-id="@item.TokenId" class="btn btn-success pull-left btn-outline-info">Details</a>
-
-                        @* <input type="submit" asp-controller="Nft" asp-action="Index" value="Buy" class="btn btn-success pull-right btn-outline-info"/> *@
-                        <form asp-action="Index" method="post" enctype="multipart/form-data">
-                            <button type="submit" asp-route-id="@item.TokenId" asp-route-price="@item.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Buy</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @Html.Partial("_NftPartial", item)
     }
 </div>

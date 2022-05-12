@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NftProject", "NftProject\NftProject.csproj", "{E4B6F626-1C05-4885-AE6A-181064DCE28B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperProject.Server", "..\..\..\Metamask\SuperProject.Server\SuperProject.Server.csproj", "{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum.Erc20.Blazor", "..\..\..\Metamask\Nethereum.Erc20.Blazor\Nethereum.Erc20.Blazor.csproj", "{32BB168A-3D7A-4671-BAA7-866C21A4AF32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum.Metamask", "..\..\..\Metamask\Nethereum.Metamask\Nethereum.Metamask.csproj", "{DF3E1266-ED68-4139-A1E1-580CF9E81845}"
@@ -24,10 +22,6 @@ Global
 		{E4B6F626-1C05-4885-AE6A-181064DCE28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4B6F626-1C05-4885-AE6A-181064DCE28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4B6F626-1C05-4885-AE6A-181064DCE28B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5DCDB30-D490-4DDE-BB15-A6F05834EAC3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{32BB168A-3D7A-4671-BAA7-866C21A4AF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{32BB168A-3D7A-4671-BAA7-866C21A4AF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32BB168A-3D7A-4671-BAA7-866C21A4AF32}.Release|Any CPU.ActiveCfg = Release|Any CPU

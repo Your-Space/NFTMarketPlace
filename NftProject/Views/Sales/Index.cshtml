@@ -1,0 +1,15 @@
+@model NftViewItemModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2 class="text-info">Nft Detail</h2>
+
+@Html.Partial("_NftDetailsPartial", Model)
+
+<a asp-action="ClassicSale" asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-success btn-outline-info">Market Sale</a>
+<a asp-action="AuctionSale" asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-success btn-outline-info">Market Auction</a>
+
+

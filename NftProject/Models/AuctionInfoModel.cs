@@ -1,5 +1,6 @@
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.Build.Framework;
 
 namespace NftProject.Models;
 
@@ -12,16 +13,16 @@ public class AuctionInfoModel
     public string TokenId { get; set; } //actually big integer
 
     [Required]
-    public string MinimalBid { get; set; }
-
-    [Required]
+    [DisplayName("Minimal Bid Step")]
     public string MinimalBidStep { get; set; }
     
     [Required]
+    [DisplayName("Start date")]
     [Column(TypeName="Date")]
     public DateTime StartDate { get; set; }
     
     [Required]
+    [DisplayName("Final date")]
     [Column(TypeName="Date")]
     public DateTime FinalDate { get; set; }
 }
