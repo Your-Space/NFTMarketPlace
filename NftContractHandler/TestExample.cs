@@ -77,16 +77,7 @@ public class TestExample
         Console.WriteLine($"Contract Address: {Service.ContractHandler.ContractAddress}");
         ListingPrice = Service.GetListingPriceQueryAsync().Result;
     }
-
-    // public void setTest(Web3 web3)
-    // {
-    //     ResourceReader reader = new ResourceReader(@".\NftResources.resources");
-    //     IDictionaryEnumerator dict = reader.GetEnumerator();
-    //     dict.MoveNext();
-    //     
-    //     this.web3 = web3;
-    //     Service = new NFTMarketplaceService(web3, (string) dict.Value);
-    // }
+    
 
     public async Task CreateToken(string uri, BigInteger price, BigInteger value)
     {

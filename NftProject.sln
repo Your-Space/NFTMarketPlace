@@ -14,8 +14,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nethereum.UI", "..\..\..\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NftContractHandler", "NftContractHandler\NftContractHandler.csproj", "{9D362ECF-CB30-40DF-AE78-3BF795A2637A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NftApi", "NftApi\NftApi.csproj", "{63F683E5-4497-425C-8717-E42EBA193030}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,9 +48,5 @@ Global
 		{9D362ECF-CB30-40DF-AE78-3BF795A2637A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D362ECF-CB30-40DF-AE78-3BF795A2637A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D362ECF-CB30-40DF-AE78-3BF795A2637A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63F683E5-4497-425C-8717-E42EBA193030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63F683E5-4497-425C-8717-E42EBA193030}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63F683E5-4497-425C-8717-E42EBA193030}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63F683E5-4497-425C-8717-E42EBA193030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
