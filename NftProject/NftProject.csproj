@@ -35,10 +35,10 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\..\Metamask\Nethereum.Erc20.Blazor\Nethereum.Erc20.Blazor.csproj" />
-      <ProjectReference Include="..\..\..\..\Metamask\Nethereum.Metamask.Blazor\Nethereum.Metamask.Blazor.csproj" />
-      <ProjectReference Include="..\..\..\..\Metamask\Nethereum.Metamask\Nethereum.Metamask.csproj" />
-      <ProjectReference Include="..\..\..\..\Metamask\Nethereum.UI\Nethereum.UI.csproj" />
+      <ProjectReference Include="..\Nethereum.Erc20.Blazor\Nethereum.Erc20.Blazor.csproj" />
+      <ProjectReference Include="..\Nethereum.Metamask.Blazor\Nethereum.Metamask.Blazor.csproj" />
+      <ProjectReference Include="..\Nethereum.Metamask\Nethereum.Metamask.csproj" />
+      <ProjectReference Include="..\Nethereum.UI\Nethereum.UI.csproj" />
       <ProjectReference Include="..\NftContractHandler\NftContractHandler.csproj" />
     </ItemGroup>
 

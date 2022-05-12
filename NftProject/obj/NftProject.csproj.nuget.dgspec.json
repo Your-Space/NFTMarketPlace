@@ -4,14 +4,14 @@
     "D:\\youtube tutorial\\Shop\\NftProject\\NftProject\\NftProject.csproj": {}
   },
   "projects": {
-    "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
+    "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj",
+        "projectUniqueName": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj",
         "projectName": "Nethereum.Erc20.Blazor",
-        "projectPath": "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj",
+        "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj",
         "packagesPath": "C:\\Users\\tyman\\.nuget\\packages\\",
-        "outputPath": "D:\\Metamask\\Nethereum.Erc20.Blazor\\obj\\",
+        "outputPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tyman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj"
+              },
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj"
               },
               "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj": {
                 "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj"
@@ -87,14 +90,14 @@
         }
       }
     },
-    "D:\\Metamask\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj": {
+    "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Metamask\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj",
+        "projectUniqueName": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj",
         "projectName": "Nethereum.Metamask.Blazor",
-        "projectPath": "D:\\Metamask\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj",
+        "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj",
         "packagesPath": "C:\\Users\\tyman\\.nuget\\packages\\",
-        "outputPath": "D:\\Metamask\\Nethereum.Metamask.Blazor\\obj\\",
+        "outputPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tyman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -111,14 +114,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj"
               },
-              "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj"
               },
-              "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj": {
-                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj"
               }
             }
           }
@@ -162,14 +165,14 @@
         }
       }
     },
-    "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
+    "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
+        "projectUniqueName": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
         "projectName": "Nethereum.Metamask",
-        "projectPath": "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
+        "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
         "packagesPath": "C:\\Users\\tyman\\.nuget\\packages\\",
-        "outputPath": "D:\\Metamask\\Nethereum.Metamask\\obj\\",
+        "outputPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tyman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -186,8 +189,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj"
               }
             }
           }
@@ -226,14 +229,14 @@
         }
       }
     },
-    "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj": {
+    "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj",
+        "projectUniqueName": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj",
         "projectName": "Nethereum.UI",
-        "projectPath": "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj",
+        "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj",
         "packagesPath": "C:\\Users\\tyman\\.nuget\\packages\\",
-        "outputPath": "D:\\Metamask\\Nethereum.UI\\obj\\",
+        "outputPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tyman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -378,17 +381,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj"
               },
-              "D:\\Metamask\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj"
               },
-              "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj"
               },
-              "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj": {
-                "projectPath": "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj"
+              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
+                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj"
               },
               "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj": {
                 "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj"

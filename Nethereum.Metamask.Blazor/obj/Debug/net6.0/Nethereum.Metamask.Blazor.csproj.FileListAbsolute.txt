@@ -1,0 +1,78 @@
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.staticwebassets.runtime.json
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.deps.json
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.dll
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.pdb
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.dll
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.UI.dll
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.pdb
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.csproj.AssemblyReference.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.AssemblyInfoInputs.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.AssemblyInfo.cs
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.csproj.CoreCompileInputs.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\staticwebassets.build.json
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\staticwebassets.development.json
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\scopedcss\Metamask.razor.rz.scp.css
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\scopedcss\bundle\Nethereum.Metamask.Blazor.styles.css
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\scopedcss\projectbundle\Nethereum.Metamask.Blazor.bundle.scp.css
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.csproj.CopyComplete
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.dll
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\ref\Nethereum.Metamask.Blazor.dll
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.pdb
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorComponent.input.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\RazorDeclaration\_Imports.razor.g.cs
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\RazorDeclaration\Metamask.razor.g.cs
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorComponent.output.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\RazorDeclaration\Nethereum.Metamask.Blazor.dll
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.TagHelpers.input.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.TagHelpers.output.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorCoreGenerate.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Razor\_Imports.razor.g.cs
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Razor\Metamask.razor.g.cs
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorTargetAssemblyInfo.cache
+D:\Metamask\Nethereum.Metamask.Blazor\obj\Debug\net6.0\refint\Nethereum.Metamask.Blazor.dll
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\NftContractHandler.dll
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\NftContractHandler.pdb
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.staticwebassets.runtime.json
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.dll
+D:\Metamask\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.staticwebassets.runtime.json
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.staticwebassets.runtime.json
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.deps.json
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.Blazor.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.UI.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\NftContractHandler.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.Metamask.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\bin\Debug\net6.0\NftContractHandler.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.csproj.AssemblyReference.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.GeneratedMSBuildEditorConfig.editorconfig
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.AssemblyInfoInputs.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.AssemblyInfo.cs
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.csproj.CoreCompileInputs.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorComponent.input.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\RazorDeclaration\_Imports.razor.g.cs
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\RazorDeclaration\Metamask.razor.g.cs
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorComponent.output.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\RazorDeclaration\Nethereum.Metamask.Blazor.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.TagHelpers.input.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.TagHelpers.output.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorCoreGenerate.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Razor\_Imports.razor.g.cs
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Razor\Metamask.razor.g.cs
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\staticwebassets.build.json
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\staticwebassets.development.json
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\scopedcss\Metamask.razor.rz.scp.css
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\scopedcss\bundle\Nethereum.Metamask.Blazor.styles.css
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\scopedcss\projectbundle\Nethereum.Metamask.Blazor.bundle.scp.css
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.RazorTargetAssemblyInfo.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.csproj.CopyComplete
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\refint\Nethereum.Metamask.Blazor.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\Nethereum.Metamask.Blazor.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\obj\Debug\net6.0\ref\Nethereum.Metamask.Blazor.dll

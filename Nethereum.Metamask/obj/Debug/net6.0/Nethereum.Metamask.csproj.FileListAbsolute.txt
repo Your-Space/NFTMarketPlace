@@ -1,0 +1,30 @@
+D:\Metamask\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.Metamask.deps.json
+D:\Metamask\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.Metamask.dll
+D:\Metamask\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.Metamask.pdb
+D:\Metamask\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.UI.dll
+D:\Metamask\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.csproj.AssemblyReference.cache
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.GeneratedMSBuildEditorConfig.editorconfig
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.AssemblyInfoInputs.cache
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.AssemblyInfo.cs
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.csproj.CoreCompileInputs.cache
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.csproj.CopyComplete
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.dll
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\ref\Nethereum.Metamask.dll
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.pdb
+D:\Metamask\Nethereum.Metamask\obj\Debug\net6.0\refint\Nethereum.Metamask.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.Metamask.deps.json
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.Metamask.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.Metamask.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.UI.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.csproj.AssemblyReference.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.GeneratedMSBuildEditorConfig.editorconfig
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.AssemblyInfoInputs.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.AssemblyInfo.cs
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.csproj.CoreCompileInputs.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.csproj.CopyComplete
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\refint\Nethereum.Metamask.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\Nethereum.Metamask.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask\obj\Debug\net6.0\ref\Nethereum.Metamask.dll

@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "Hash": "nOvn2JBhKnuEQBPJ9VpWk624UblbXQ4Q+nyVhd7+iFQ=",
+  "Source": "Nethereum.Erc20.Blazor",
+  "BasePath": "_content/Nethereum.Erc20.Blazor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nethereum.Erc20.Blazor.styles.css",
+      "SourceId": "Nethereum.Erc20.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Nethereum.Erc20.Blazor",
+      "RelativePath": "Nethereum.Erc20.Blazor.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nethereum.Erc20.Blazor.styles.css"
+    },
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nethereum.Erc20.Blazor.bundle.scp.css",
+      "SourceId": "Nethereum.Erc20.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Nethereum.Erc20.Blazor",
+      "RelativePath": "Nethereum.Erc20.Blazor.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nethereum.Erc20.Blazor.bundle.scp.css"
+    }
+  ]
+}

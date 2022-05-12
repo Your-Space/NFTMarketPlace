@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "Hash": "Fu5mAyzvQMQpAkRFfH3ify9dqc3A9WouWw8h1B6EXro=",
+  "Source": "Nethereum.Metamask.Blazor",
+  "BasePath": "_content/Nethereum.Metamask.Blazor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj",
+      "Version": 2,
+      "Source": "Nethereum.Erc20.Blazor",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Nethereum.Metamask.Blazor\\wwwroot",
+      "Source": "Nethereum.Metamask.Blazor",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\wwwroot\\",
+      "BasePath": "_content/Nethereum.Metamask.Blazor",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nethereum.Erc20.Blazor.bundle.scp.css",
+      "SourceId": "Nethereum.Erc20.Blazor",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Nethereum.Erc20.Blazor",
+      "RelativePath": "Nethereum.Erc20.Blazor.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nethereum.Erc20.Blazor.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nethereum.Metamask.Blazor.styles.css",
+      "SourceId": "Nethereum.Metamask.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Nethereum.Metamask.Blazor",
+      "RelativePath": "Nethereum.Metamask.Blazor.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nethereum.Metamask.Blazor.styles.css"
+    },
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nethereum.Metamask.Blazor.bundle.scp.css",
+      "SourceId": "Nethereum.Metamask.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Nethereum.Metamask.Blazor",
+      "RelativePath": "Nethereum.Metamask.Blazor.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nethereum.Metamask.Blazor.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\wwwroot\\img\\metamask-fox.svg",
+      "SourceId": "Nethereum.Metamask.Blazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\wwwroot\\",
+      "BasePath": "_content/Nethereum.Metamask.Blazor",
+      "RelativePath": "img/metamask-fox.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\metamask-fox.svg"
+    },
+    {
+      "Identity": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\wwwroot\\NethereumMetamask.js",
+      "SourceId": "Nethereum.Metamask.Blazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\wwwroot\\",
+      "BasePath": "_content/Nethereum.Metamask.Blazor",
+      "RelativePath": "NethereumMetamask.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NethereumMetamask.js"
+    }
+  ]
+}

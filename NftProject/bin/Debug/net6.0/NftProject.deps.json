@@ -2971,6 +2971,7 @@
           "Accelist.FluentValidation.Blazor": "4.0.0",
           "FluentValidation": "9.4.0",
           "Microsoft.AspNetCore.Components.Web": "6.0.2",
+          "Nethereum.Metamask": "1.0.0",
           "Nethereum.StandardTokenEIP20": "4.2.0",
           "Nethereum.UI": "1.0.0",
           "Nethereum.Web3": "4.3.0",
@@ -2994,7 +2995,7 @@
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.2",
           "Nethereum.Erc20.Blazor": "1.0.0",
           "Nethereum.Metamask": "1.0.0",
-          "NftContractHandler": "1.0.0"
+          "Nethereum.UI": "1.0.0"
         },
         "runtime": {
           "Nethereum.Metamask.Blazor.dll": {}

@@ -3936,6 +3936,7 @@
           "Accelist.FluentValidation.Blazor": "4.0.0",
           "FluentValidation": "9.3.0",
           "Microsoft.AspNetCore.Components.Web": "6.0.2",
+          "Nethereum.Metamask": "1.0.0",
           "Nethereum.StandardTokenEIP20": "4.2.0",
           "Nethereum.UI": "1.0.0",
           "Nethereum.Web3": "4.3.0",
@@ -3969,7 +3970,7 @@
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.2",
           "Nethereum.Erc20.Blazor": "1.0.0",
           "Nethereum.Metamask": "1.0.0",
-          "NftContractHandler": "1.0.0"
+          "Nethereum.UI": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Nethereum.Metamask.Blazor.dll": {}
@@ -11660,23 +11661,23 @@
     },
     "Nethereum.Erc20.Blazor/1.0.0": {
       "type": "project",
-      "path": "../../../../Metamask/Nethereum.Erc20.Blazor/Nethereum.Erc20.Blazor.csproj",
-      "msbuildProject": "../../../../Metamask/Nethereum.Erc20.Blazor/Nethereum.Erc20.Blazor.csproj"
+      "path": "../Nethereum.Erc20.Blazor/Nethereum.Erc20.Blazor.csproj",
+      "msbuildProject": "../Nethereum.Erc20.Blazor/Nethereum.Erc20.Blazor.csproj"
     },
     "Nethereum.Metamask/1.0.0": {
       "type": "project",
-      "path": "../../../../Metamask/Nethereum.Metamask/Nethereum.Metamask.csproj",
-      "msbuildProject": "../../../../Metamask/Nethereum.Metamask/Nethereum.Metamask.csproj"
+      "path": "../Nethereum.Metamask/Nethereum.Metamask.csproj",
+      "msbuildProject": "../Nethereum.Metamask/Nethereum.Metamask.csproj"
     },
     "Nethereum.Metamask.Blazor/1.0.0": {
       "type": "project",
-      "path": "../../../../Metamask/Nethereum.Metamask.Blazor/Nethereum.Metamask.Blazor.csproj",
-      "msbuildProject": "../../../../Metamask/Nethereum.Metamask.Blazor/Nethereum.Metamask.Blazor.csproj"
+      "path": "../Nethereum.Metamask.Blazor/Nethereum.Metamask.Blazor.csproj",
+      "msbuildProject": "../Nethereum.Metamask.Blazor/Nethereum.Metamask.Blazor.csproj"
     },
     "Nethereum.UI/1.0.0": {
       "type": "project",
-      "path": "../../../../Metamask/Nethereum.UI/Nethereum.UI.csproj",
-      "msbuildProject": "../../../../Metamask/Nethereum.UI/Nethereum.UI.csproj"
+      "path": "../Nethereum.UI/Nethereum.UI.csproj",
+      "msbuildProject": "../Nethereum.UI/Nethereum.UI.csproj"
     },
     "NftContractHandler/1.0.0": {
       "type": "project",
@@ -11731,17 +11732,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
-              "projectPath": "D:\\Metamask\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj"
+            "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj": {
+              "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Erc20.Blazor\\Nethereum.Erc20.Blazor.csproj"
             },
-            "D:\\Metamask\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj": {
-              "projectPath": "D:\\Metamask\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj"
+            "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj": {
+              "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask.Blazor\\Nethereum.Metamask.Blazor.csproj"
             },
-            "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
-              "projectPath": "D:\\Metamask\\Nethereum.Metamask\\Nethereum.Metamask.csproj"
+            "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
+              "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj"
             },
-            "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj": {
-              "projectPath": "D:\\Metamask\\Nethereum.UI\\Nethereum.UI.csproj"
+            "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
+              "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj"
             },
             "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj": {
               "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\NftContractHandler\\NftContractHandler.csproj"

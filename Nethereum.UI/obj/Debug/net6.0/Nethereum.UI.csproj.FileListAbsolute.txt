@@ -1,0 +1,24 @@
+D:\Metamask\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.deps.json
+D:\Metamask\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.dll
+D:\Metamask\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.csproj.AssemblyReference.cache
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.AssemblyInfoInputs.cache
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.AssemblyInfo.cs
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.csproj.CoreCompileInputs.cache
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.dll
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\ref\Nethereum.UI.dll
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.pdb
+D:\Metamask\Nethereum.UI\obj\Debug\net6.0\refint\Nethereum.UI.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.deps.json
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.csproj.AssemblyReference.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.AssemblyInfoInputs.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.AssemblyInfo.cs
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.csproj.CoreCompileInputs.cache
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\refint\Nethereum.UI.dll
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.pdb
+D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\ref\Nethereum.UI.dll
