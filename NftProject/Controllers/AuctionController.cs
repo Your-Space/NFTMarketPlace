@@ -159,8 +159,8 @@ namespace NftProject.Controllers
 
             if (ModelState.IsValid)
             {
-                //_context.Add(auctionInfoModel);
-                //await _context.SaveChangesAsync();
+                _context.Add(auctionInfoModel);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(auctionInfoModel); //change
