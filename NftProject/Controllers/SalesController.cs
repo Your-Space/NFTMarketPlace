@@ -150,14 +150,14 @@ public class SalesController : Controller
         return NftMetadata;
     }
     
-    public async Task<NftViewItemModel?> GetNft(string id)
+    private async Task<NftViewItemModel?> GetNft(string id)
     {
         List<MarketItem> marketItems = (await _testExample.Service.FetchMyNFTsQueryAsync()).ReturnValue1;
         
         MarketItem? marketItem = null;
         foreach (var item in marketItems)
         {
-            //deserialize token uri
+            
             if(item.TokenId != BigInteger.Parse(id))
                 continue;
             marketItem = item;

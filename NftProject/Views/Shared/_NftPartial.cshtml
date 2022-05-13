@@ -21,9 +21,18 @@
 
                 @if (action.Equals("Index"))
                 {
-                    <form asp-action="Index" method="post" enctype="multipart/form-data">
-                        <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Buy</button>
-                    </form>
+                    if (Model.AuctionSale)
+                    {
+                        <form asp-action="Index" method="post" enctype="multipart/form-data">
+                            <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Bid</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form asp-action="Index" method="post" enctype="multipart/form-data">
+                            <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Buy</button>
+                        </form>
+                    }
                 } else if (action.Equals("MyNfts"))
                 {
                     <a asp-controller="Sales" asp-action="Index"asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-success pull-right btn-outline-info">List</a>

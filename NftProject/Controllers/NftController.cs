@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NftContractHandler;
 using NftProject.Contracts.NFTMarketplace.ContractDefinition;
+using NftProject.Data;
 using NftProject.Models;
 
 namespace NftProject.Controllers;
@@ -14,12 +15,14 @@ public class NftController : Controller
     private readonly IWebHostEnvironment _webHostEnvironment;
     private readonly IpfsClient _client;
     private readonly TestExample _testExample;
-    
-    public NftController(IWebHostEnvironment webHostEnvironment, TestExample testExample)
+    private readonly ApplicationDbContext _dbContext;
+
+    public NftController(IWebHostEnvironment webHostEnvironment, TestExample testExample, ApplicationDbContext dbContext)
     {
         _webHostEnvironment = webHostEnvironment;
         _client = new IpfsClient("https://ipfs.infura.io:5001/api/v0");
         _testExample = testExample;
+        _dbContext = dbContext;
     }
 
     //GET
@@ -34,9 +37,16 @@ public class NftController : Controller
             NftViewItemModel tmp = new NftViewItemModel();
             tmp.NftMetadata = await ReadJsonFromWeb(item.TokenId);
             tmp.MarketData = item;
+
+            //check if it is on auction
+            AuctionInfoModel? dbResult = _dbContext.AuctionInfo.FirstOrDefault(m => m.TokenId.Equals(item.TokenId.ToString()));
             
+            if (dbResult != null)
+                tmp.AuctionSale = true;
+
             metaSet.Add(tmp); 
         }
+        
         
         return View(metaSet);
     }
