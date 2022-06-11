@@ -40,9 +40,14 @@ public class NftController : Controller
 
             //check if it is on auction
             AuctionInfoModel? dbResult = _dbContext.AuctionInfo.FirstOrDefault(m => m.TokenId.Equals(item.TokenId.ToString()));
-            
+
             if (dbResult != null)
+            {
                 tmp.AuctionSale = true;
+                string lastPrice = _dbContext.AuctionSales.OrderBy(m => m.Price).LastOrDefault(m => m.TokenId == dbResult.TokenId)?.Price
+                                   ?? dbResult.startPrice;
+                tmp.NftMetadata.Price = lastPrice;
+            }
 
             metaSet.Add(tmp); 
         }

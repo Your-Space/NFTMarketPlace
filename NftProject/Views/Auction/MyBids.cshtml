@@ -1,0 +1,69 @@
+@model IEnumerable<AuctionSaleModel>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@if (Model.Any())
+{
+    
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TokenId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailAddress)
+            </th>
+            <th>NFT info</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TokenId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailAddress)
+                </td>
+                <td>               
+                    <a asp-controller="Nft" asp-action="Detail" asp-route-id="@item.TokenId" 
+                       asp-route-nftaction="Auction"
+                       class="btn btn-success pull-left btn-outline-info">View nft</a>
+                </td>
+                
+                @* <td> *@
+                @*     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> | *@
+                @*     <a asp-action="Details" asp-route-id="@item.Id">Details</a> | *@
+                @*     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> *@
+                @* </td> *@
+            </tr>
+        }
+        </tbody>
+    </table>
+} else{
+    <h2>You are not participating in auction</h2>
+}
+
+<h2>My active bids</h2>
+
+
+
+<h2>
+    
+</h2>

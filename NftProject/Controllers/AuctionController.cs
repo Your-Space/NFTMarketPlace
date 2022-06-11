@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using NftContractHandler;
 using NftProject.Data;
 using NftProject.Models;
+using NftProject.Models.ViewModels;
 
 namespace NftProject.Controllers
 {
@@ -248,6 +249,75 @@ namespace NftProject.Controllers
             model.AuctionInfo = await _context.AuctionInfo.FirstOrDefaultAsync(m => m.TokenId == id)!;
             
             return View(model);
+        }
+
+        public async Task<IActionResult> MyBids()
+        {
+            string addr = _testExample.CurrentUserAddress;
+            // check if bid are active!
+            // by checkng the date
+
+            
+            //my bids token ids
+            List<string> tokenIds = _context.AuctionSales
+                .Where(m => m.Address.Equals(addr))
+                .Select(m => m.TokenId).Distinct()
+                .ToList();
+
+            Console.WriteLine($"Count {tokenIds.Count}, {tokenIds[0]}");
+
+
+            // which bids are active by my token id 
+            List<AuctionInfoModel> myActiveBidsInfo = _context.AuctionInfo
+                .Where(m => (m.FinalDate > DateTime.Today && tokenIds.Contains(m.TokenId)))
+                .ToList();
+
+            // Model of my 
+            List<AuctionSaleModel> allActiveBids = _context.AuctionSales
+                .Where(m => myActiveBidsInfo.
+                                            Select(g => g.TokenId).
+                                            ToList().Contains(m.TokenId))
+                .ToList();
+
+          //  List<AuctionSaleModel> myActiveBids = allActiveBids.Where(m => m.Address.Equals(addr)).ToList();
+            
+            // that is all my bids depending if final date has come or not  
+            List<string> activeTokenIds = allActiveBids.Select(m => m.TokenId).Distinct().ToList();
+
+            List<AuctionSaleModel> winningBids = new List<AuctionSaleModel>();
+            foreach (var token in activeTokenIds)
+            {
+                winningBids.Add(allActiveBids.Where(m => m.TokenId.Equals(token)).OrderByDescending(m => m.Price).ToList().FirstOrDefault()!);
+            }
+
+            List<AuctionSaleModel> myWinningBids = winningBids.Where(m => m.Address.Equals(addr)).ToList();
+            
+
+            return View(myWinningBids);
+        }
+        
+        public async Task<IActionResult> MyAuctions()
+        {
+            string addr = _testExample.CurrentUserAddress;
+            // check if bid are active!
+            // by checkng the date
+
+            
+            //my bids token ids
+           
+            List<AuctionInfoModel> myActiveAuctions = _context.AuctionInfo
+                .Where(m => (m.FinalDate > DateTime.Today))
+                .ToList();
+
+            // Model of my 
+            List<AuctionSaleModel> bids = _context.AuctionSales
+                .Where(m=> myActiveAuctions.Select(g => g.TokenId).ToList().Contains(m.TokenId)).ToList();
+
+            MyAuctions myAuctions = new MyAuctions();
+            myAuctions.AuctionInfoList = myActiveAuctions.OrderBy(m=>m.FinalDate).ToList();
+            myAuctions.AuctionSalesList = bids;
+
+            return View(myAuctions);
         }
 
         [HttpPost]

@@ -1,0 +1,138 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Nethereum.Contracts.Standards.ENS.Registrar.ContractDefinition
+@model NftProject.Models.ViewModels.MyAuctions
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+
+@if (Model.AuctionInfoList.Any())
+{
+    foreach (var item in Model.AuctionInfoList)
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => Model.AuctionInfoList[0].TokenId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => Model.AuctionInfoList[0].startPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => Model.AuctionInfoList[0].StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => Model.AuctionInfoList[0].FinalDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => Model.AuctionInfoList[0].MinimalBidStep)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => Model.AuctionInfoList[0].OwnerWalletAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => Model.AuctionInfoList[0].EmailAddress)
+                </th>
+                <th>NFT info</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.TokenId)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.startPrice)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.StartDate)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.FinalDate)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.MinimalBidStep)
+                </td>
+
+
+                <td>
+                    @Html.DisplayFor(model => item.OwnerWalletAddress)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.EmailAddress)
+                </td>
+                <td>
+                    <a asp-controller="Nft" asp-action="Detail" asp-route-id="@item.TokenId"
+                       asp-route-nftaction="Auction"
+                       class="btn btn-success pull-left btn-outline-info">View nft</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+            
+        // table for bids
+        if (Model.AuctionSalesList.Any())
+        {
+            {
+                List<AuctionSaleModel> bids = Model.AuctionSalesList
+                    .Where(m => m.TokenId.Equals(item.TokenId))
+                    .OrderByDescending(m => m.Price)
+                    .ToList();
+                if (bids.Any())
+                {
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.AuctionSalesList[0].TokenId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.AuctionSalesList[0].Price)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.AuctionSalesList[0].Address)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.AuctionSalesList[0].EmailAddress)
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var bid in bids) {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => bid.TokenId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => bid.Price)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => bid.Address)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => bid.EmailAddress)
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                } else{
+                    <h2>No bids yet</h2>
+                }
+            }
+        }
+    }
+}
+else
+{
+    <h2>You don't have any auctions</h2>
+}
