@@ -1,15 +1,16 @@
 using System.Net;
 using System.Numerics;
 using System.Text.RegularExpressions;
+using Contracts.Contracts.NFTMarketplace.ContractDefinition;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using Nethereum.ABI.Util;
 using Newtonsoft.Json;
 using NftContractHandler;
-using NftProject.Contracts.NFTMarketplace.ContractDefinition;
 using NftProject.Data;
 using NftProject.Models;
+using NftProject.Models.ViewModels;
 
 namespace NftProject.Controllers;
 
@@ -47,7 +48,7 @@ public class SalesController : Controller
 
         NftViewItemModel res = (await GetNft(id))!;
 
-        AuctionViewModel view = new AuctionViewModel();
+        AuctionCreateModel view = new AuctionCreateModel();
         view.NftViewModel = res;
         view.AuctionInfo = new AuctionInfoModel();
         view.AuctionInfo.StartDate = DateTime.Now;
@@ -56,7 +57,7 @@ public class SalesController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> AuctionSale(AuctionViewModel auctionViewModel, string? id)
+    public async Task<IActionResult> AuctionSale(AuctionCreateModel auctionViewModel, string? id)
     {
         
         if(id==null)
@@ -75,10 +76,8 @@ public class SalesController : Controller
 
         auctionViewModel.AuctionInfo.TokenId = id;
         ModelState.Remove("AuctionInfo.TokenId");
-        auctionViewModel.AuctionSale.TokenId = id;
-        ModelState.Remove("AuctionSale.TokenId");
-        auctionViewModel.AuctionSale.Address = _testExample.CurrentUserAddress;
-        ModelState.Remove("AuctionSale.Address");
+        auctionViewModel.AuctionInfo.OwnerWalletAddress = _testExample.CurrentUserAddress;
+        ModelState.Remove("AuctionInfo.OwnerWalletAddress");
         
         //push to database
 
@@ -91,9 +90,11 @@ public class SalesController : Controller
         if (ModelState.IsValid)
         {
             _dbContext.Add(auctionViewModel.AuctionInfo);
-            _dbContext.Add(auctionViewModel.AuctionSale);
             await _dbContext.SaveChangesAsync();
-            await _testExample.ResellToken(BigInteger.Parse(id), BigInteger.Parse(auctionViewModel.AuctionSale.Price));
+            await _testExample.ResellToken(BigInteger.Parse(id), BigInteger.Parse(auctionViewModel.AuctionInfo.startPrice));
+            await _testExample.UpdatePriceAsync(BigInteger.Parse(id), 
+                BigInteger.Parse(auctionViewModel.AuctionInfo.startPrice));
+            
             return RedirectToAction(nameof(Index), "Nft");
         }
 

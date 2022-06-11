@@ -13,21 +13,21 @@ namespace Nethereum.Metamask.Blazor
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\_Imports.razor"
+#line 1 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Metamask.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\Metamask.razor"
+#line 1 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Metamask.Blazor\Metamask.razor"
 using Nethereum.UI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\Metamask.razor"
+#line 2 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Metamask.Blazor\Metamask.razor"
 using NftContractHandler;
 
 #line default
@@ -41,7 +41,7 @@ using NftContractHandler;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 25 "D:\youtube tutorial\Shop\NftProject\Nethereum.Metamask.Blazor\Metamask.razor"
+#line 25 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Metamask.Blazor\Metamask.razor"
        
 
     bool MetamaskAvailable { get; set; }

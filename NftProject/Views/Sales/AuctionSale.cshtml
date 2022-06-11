@@ -1,4 +1,4 @@
-@model NftProject.Models.AuctionViewModel
+@model NftProject.Models.ViewModels.AuctionCreateModel
 
 @{
     ViewBag.Title = "title";
@@ -8,7 +8,6 @@
 <h2 class="text-info">Nft Detail</h2>
 
 @Html.Partial("_NftDetailsPartial", Model.NftViewModel)
-
 
 <h1>Create</h1>
 
@@ -36,11 +35,16 @@
             
             @* next *@
             <div class="form-group">
-                <label asp-for="AuctionSale.Price" class="control-label"></label>
-                <input asp-for="AuctionSale.Price" class="form-control" />
-                <span asp-validation-for="AuctionSale.Price" class="text-danger"></span>
+                <label asp-for="AuctionInfo.startPrice" class="control-label"></label>
+                <input asp-for="AuctionInfo.startPrice" class="form-control" />
+                <span asp-validation-for="AuctionInfo.startPrice" class="text-danger"></span>
             </div>
-
+            <div class="form-group">
+                <label asp-for="AuctionInfo.EmailAddress" class="control-label"></label>
+                <input asp-for="AuctionInfo.EmailAddress" class="form-control" />
+                <span asp-validation-for="AuctionInfo.EmailAddress" class="text-danger"></span>
+            </div>
+            
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

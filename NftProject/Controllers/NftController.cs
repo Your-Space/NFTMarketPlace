@@ -1,10 +1,10 @@
 using System.Net;
 using System.Numerics;
+using Contracts.Contracts.NFTMarketplace.ContractDefinition;
 using Ipfs.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NftContractHandler;
-using NftProject.Contracts.NFTMarketplace.ContractDefinition;
 using NftProject.Data;
 using NftProject.Models;
 

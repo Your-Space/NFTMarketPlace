@@ -13,92 +13,85 @@ namespace Nethereum.Erc20.Blazor
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\_Imports.razor"
+#line 1 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 1 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using Nethereum.UI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 2 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using FluentValidation;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 3 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using Accelist.FluentValidation.Blazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 4 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 5 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using Nethereum.RPC.Eth;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 6 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using Nethereum.StandardTokenEIP20.ContractDefinition;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 7 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using Nethereum.Web3;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 8 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using Nethereum.Web3.Accounts.Managed;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 9 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using NftContractHandler;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
-using NftProject.Contracts.NFTMarketplace;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 11 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
-using NftProject.Contracts.NFTMarketplace.ContractDefinition;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 12 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 11 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
 using System.Numerics;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+using global::Contracts.Contracts.NFTMarketplace;
 
 #line default
 #line hidden
@@ -111,7 +104,7 @@ using System.Numerics;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 76 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
+#line 76 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\Erc20Transfer.razor"
        
 
     ERC20TransferModel transferModel = new ERC20TransferModel();

@@ -68,3 +68,39 @@ D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Neth
 D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\obj\Debug\net6.0\refint\Nethereum.Erc20.Blazor.dll
 D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.pdb
 D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\obj\Debug\net6.0\ref\Nethereum.Erc20.Blazor.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.staticwebassets.runtime.json
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.deps.json
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.Erc20.Blazor.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.Metamask.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.UI.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\NftContractHandler.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.Metamask.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\bin\Debug\net6.0\NftContractHandler.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.csproj.AssemblyReference.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.AssemblyInfoInputs.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.AssemblyInfo.cs
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.csproj.CoreCompileInputs.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.RazorComponent.input.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\RazorDeclaration\_Imports.razor.g.cs
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\RazorDeclaration\Erc20Transfer.razor.g.cs
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.RazorComponent.output.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\RazorDeclaration\Nethereum.Erc20.Blazor.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.TagHelpers.input.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.TagHelpers.output.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.RazorCoreGenerate.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Razor\_Imports.razor.g.cs
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Razor\Erc20Transfer.razor.g.cs
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\staticwebassets.build.json
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\staticwebassets.development.json
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\scopedcss\Erc20Transfer.razor.rz.scp.css
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\scopedcss\bundle\Nethereum.Erc20.Blazor.styles.css
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\scopedcss\projectbundle\Nethereum.Erc20.Blazor.bundle.scp.css
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.RazorTargetAssemblyInfo.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.csproj.CopyComplete
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\refint\Nethereum.Erc20.Blazor.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\Nethereum.Erc20.Blazor.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\obj\Debug\net6.0\ref\Nethereum.Erc20.Blazor.dll

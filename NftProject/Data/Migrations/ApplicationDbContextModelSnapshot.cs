@@ -219,6 +219,10 @@ namespace NftProject.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("FinalDate")
                         .HasColumnType("Date");
 
@@ -226,10 +230,18 @@ namespace NftProject.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("OwnerWalletAddress")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("Date");
 
                     b.Property<string>("TokenId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("startPrice")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -245,6 +257,10 @@ namespace NftProject.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EmailAddress")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

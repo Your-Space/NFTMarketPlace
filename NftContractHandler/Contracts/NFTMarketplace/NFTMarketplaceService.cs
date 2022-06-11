@@ -1,13 +1,22 @@
+using System;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 using System.Numerics;
-using Nethereum.Contracts.ContractHandlers;
+using Nethereum.Hex.HexTypes;
+using Nethereum.ABI.FunctionEncoding.Attributes;
+using Nethereum.Web3;
 using Nethereum.RPC.Eth.DTOs;
-using NftProject.Contracts.NFTMarketplace.ContractDefinition;
+using Nethereum.Contracts.CQS;
+using Nethereum.Contracts.ContractHandlers;
+using Nethereum.Contracts;
+using System.Threading;
+using Contracts.Contracts.NFTMarketplace.ContractDefinition;
 
-namespace NftProject.Contracts.NFTMarketplace
+namespace Contracts.Contracts.NFTMarketplace
 {
     public partial class NFTMarketplaceService
     {
-        public static Task<TransactionReceipt> DeployContractAndWaitForReceiptAsync(Nethereum.Web3.Web3 web3, NFTMarketplaceDeployment? nFTMarketplaceDeployment, CancellationTokenSource cancellationTokenSource = null)
+        public static Task<TransactionReceipt> DeployContractAndWaitForReceiptAsync(Nethereum.Web3.Web3 web3, NFTMarketplaceDeployment nFTMarketplaceDeployment, CancellationTokenSource cancellationTokenSource = null)
         {
             return web3.Eth.GetContractDeploymentHandler<NFTMarketplaceDeployment>().SendRequestAndWaitForReceiptAsync(nFTMarketplaceDeployment, cancellationTokenSource);
         }
@@ -17,7 +26,7 @@ namespace NftProject.Contracts.NFTMarketplace
             return web3.Eth.GetContractDeploymentHandler<NFTMarketplaceDeployment>().SendRequestAsync(nFTMarketplaceDeployment);
         }
 
-        public static async Task<NFTMarketplaceService> DeployContractAndGetServiceAsync(Nethereum.Web3.Web3 web3, NFTMarketplaceDeployment? nFTMarketplaceDeployment, CancellationTokenSource cancellationTokenSource = null)
+        public static async Task<NFTMarketplaceService> DeployContractAndGetServiceAsync(Nethereum.Web3.Web3 web3, NFTMarketplaceDeployment nFTMarketplaceDeployment, CancellationTokenSource cancellationTokenSource = null)
         {
             var receipt = await DeployContractAndWaitForReceiptAsync(web3, nFTMarketplaceDeployment, cancellationTokenSource);
             return new NFTMarketplaceService(web3, receipt.ContractAddress);
@@ -155,10 +164,8 @@ namespace NftProject.Contracts.NFTMarketplace
         }
 
         public Task<FetchMyNFTsOutputDTO> FetchMyNFTsQueryAsync(BlockParameter blockParameter = null)
-        // public Task<string> FetchMyNFTsQueryAsync(BlockParameter blockParameter = null)
         {
             return ContractHandler.QueryDeserializingToObjectAsync<FetchMyNFTsFunction, FetchMyNFTsOutputDTO>(null, blockParameter);
-            // return ContractHandler.QueryAsync<FetchMyNFTsFunction, string>(null, blockParameter);
         }
 
         public Task<string> GetApprovedQueryAsync(GetApprovedFunction getApprovedFunction, BlockParameter blockParameter = null)
@@ -437,6 +444,34 @@ namespace NftProject.Contracts.NFTMarketplace
                 updateListingPriceFunction.ListingPrice = listingPrice;
             
              return ContractHandler.SendRequestAndWaitForReceiptAsync(updateListingPriceFunction, cancellationToken);
+        }
+
+        public Task<string> UpdateNftPriceRequestAsync(UpdateNftPriceFunction updateNftPriceFunction)
+        {
+             return ContractHandler.SendRequestAsync(updateNftPriceFunction);
+        }
+
+        public Task<TransactionReceipt> UpdateNftPriceRequestAndWaitForReceiptAsync(UpdateNftPriceFunction updateNftPriceFunction, CancellationTokenSource cancellationToken = null)
+        {
+             return ContractHandler.SendRequestAndWaitForReceiptAsync(updateNftPriceFunction, cancellationToken);
+        }
+
+        public Task<string> UpdateNftPriceRequestAsync(BigInteger tokenId, BigInteger price)
+        {
+            var updateNftPriceFunction = new UpdateNftPriceFunction();
+                updateNftPriceFunction.TokenId = tokenId;
+                updateNftPriceFunction.Price = price;
+            
+             return ContractHandler.SendRequestAsync(updateNftPriceFunction);
+        }
+
+        public Task<TransactionReceipt> UpdateNftPriceRequestAndWaitForReceiptAsync(BigInteger tokenId, BigInteger price, CancellationTokenSource cancellationToken = null)
+        {
+            var updateNftPriceFunction = new UpdateNftPriceFunction();
+                updateNftPriceFunction.TokenId = tokenId;
+                updateNftPriceFunction.Price = price;
+            
+             return ContractHandler.SendRequestAndWaitForReceiptAsync(updateNftPriceFunction, cancellationToken);
         }
     }
 }

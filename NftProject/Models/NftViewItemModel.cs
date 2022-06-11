@@ -1,4 +1,4 @@
-using NftProject.Contracts.NFTMarketplace.ContractDefinition;
+using Contracts.Contracts.NFTMarketplace.ContractDefinition;
 
 namespace NftProject.Models;
 

@@ -22,3 +22,15 @@ D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.d
 D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\refint\Nethereum.UI.dll
 D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.pdb
 D:\youtube tutorial\Shop\NftProject\Nethereum.UI\obj\Debug\net6.0\ref\Nethereum.UI.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.deps.json
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\bin\Debug\net6.0\Nethereum.UI.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.csproj.AssemblyReference.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.AssemblyInfoInputs.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.AssemblyInfo.cs
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.csproj.CoreCompileInputs.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\refint\Nethereum.UI.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\Nethereum.UI.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.UI\obj\Debug\net6.0\ref\Nethereum.UI.dll

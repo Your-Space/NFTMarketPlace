@@ -13,7 +13,7 @@ namespace Nethereum.Erc20.Blazor
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\youtube tutorial\Shop\NftProject\Nethereum.Erc20.Blazor\_Imports.razor"
+#line 1 "D:\Yura Mandzii\Course work\NFTMarketPlace\Nethereum.Erc20.Blazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default

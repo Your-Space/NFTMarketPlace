@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Numerics;
 using System.Resources;
+using Contracts.Contracts.NFTMarketplace;
+using Contracts.Contracts.NFTMarketplace.ContractDefinition;
 using Nethereum.RPC.Eth.DTOs;
-using NftProject.Contracts.NFTMarketplace;
-using NftProject.Contracts.NFTMarketplace.ContractDefinition;
 
 namespace NftContractHandler;
 using Nethereum.Web3;
@@ -34,7 +34,7 @@ public class TestExample
     public TestExample()
     {
         //When private node was only started
-        //CreateResourceFile();
+         //CreateResourceFile();
 
          ResourceReader reader = new ResourceReader(@".\NftResources.resources");
          IDictionaryEnumerator dict = reader.GetEnumerator();
@@ -115,6 +115,18 @@ public class TestExample
         };
 
         await Service.ContractHandler.SendRequestAndWaitForReceiptAsync(resellTokenMessage);
+    }
+    
+    public async Task UpdatePriceAsync(BigInteger tokenId, BigInteger price)
+    {
+        
+        var updatePrice = new UpdateNftPriceFunction()
+        {
+            TokenId = tokenId,
+            Price = price
+        };
+
+        await Service.ContractHandler.SendRequestAndWaitForReceiptAsync(updatePrice);
     }
 }
 

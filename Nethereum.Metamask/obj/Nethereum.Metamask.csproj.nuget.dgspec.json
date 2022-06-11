@@ -1,35 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {}
+    "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {}
   },
   "projects": {
-    "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
+    "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.Metamask\\Nethereum.Metamask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
+        "projectUniqueName": "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
         "projectName": "Nethereum.Metamask",
-        "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
-        "packagesPath": "C:\\Users\\tyman\\.nuget\\packages\\",
-        "outputPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.Metamask\\obj\\",
+        "projectPath": "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.Metamask\\Nethereum.Metamask.csproj",
+        "packagesPath": "C:\\Users\\vtorkalo\\.nuget\\packages\\",
+        "outputPath": "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.Metamask\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tyman\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\vtorkalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucapture-394721264206.d.codeartifact.us-east-1.amazonaws.com/nuget/AffiliateSyncing/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
-                "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj"
+              "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.UI\\Nethereum.UI.csproj": {
+                "projectPath": "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.UI\\Nethereum.UI.csproj"
               }
             }
           }
@@ -64,29 +70,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj": {
+    "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.UI\\Nethereum.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj",
+        "projectUniqueName": "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.UI\\Nethereum.UI.csproj",
         "projectName": "Nethereum.UI",
-        "projectPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\Nethereum.UI.csproj",
-        "packagesPath": "C:\\Users\\tyman\\.nuget\\packages\\",
-        "outputPath": "D:\\youtube tutorial\\Shop\\NftProject\\Nethereum.UI\\obj\\",
+        "projectPath": "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.UI\\Nethereum.UI.csproj",
+        "packagesPath": "C:\\Users\\vtorkalo\\.nuget\\packages\\",
+        "outputPath": "D:\\Yura Mandzii\\Course work\\NFTMarketPlace\\Nethereum.UI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tyman\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\vtorkalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucapture-394721264206.d.codeartifact.us-east-1.amazonaws.com/nuget/AffiliateSyncing/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -132,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

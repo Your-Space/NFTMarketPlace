@@ -10,3 +10,15 @@ D:\youtube tutorial\Shop\NftProject\NftContractHandler\obj\Debug\net6.0\NftContr
 D:\youtube tutorial\Shop\NftProject\NftContractHandler\obj\Debug\net6.0\refint\NftContractHandler.dll
 D:\youtube tutorial\Shop\NftProject\NftContractHandler\obj\Debug\net6.0\NftContractHandler.pdb
 D:\youtube tutorial\Shop\NftProject\NftContractHandler\obj\Debug\net6.0\ref\NftContractHandler.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\bin\Debug\net6.0\NftContractHandler.deps.json
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\bin\Debug\net6.0\NftContractHandler.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\bin\Debug\net6.0\NftContractHandler.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\NftContractHandler.csproj.AssemblyReference.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\NftContractHandler.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\NftContractHandler.AssemblyInfoInputs.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\NftContractHandler.AssemblyInfo.cs
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\NftContractHandler.csproj.CoreCompileInputs.cache
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\NftContractHandler.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\refint\NftContractHandler.dll
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\NftContractHandler.pdb
+D:\Yura Mandzii\Course work\NFTMarketPlace\NftContractHandler\obj\Debug\net6.0\ref\NftContractHandler.dll

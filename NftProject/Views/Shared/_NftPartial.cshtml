@@ -23,9 +23,7 @@
                 {
                     if (Model.AuctionSale)
                     {
-                        <form asp-action="Index" method="post" enctype="multipart/form-data">
-                            <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn btn-success pull-right btn-outline-info">Bid</button>
-                        </form>
+                         <a asp-controller="Auction" asp-action="MakeBid" asp-route-id="@Model.MarketData.TokenId.ToString()" class="btn btn-success pull-right btn-outline-info">Bid</a>
                     }
                     else
                     {

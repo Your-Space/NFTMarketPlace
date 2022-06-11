@@ -1,0 +1,38 @@
+@model AuctionViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@Html.Partial("_NftDetailsPartial", Model.NftViewModel)
+
+@* auction info *@
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="MakeBid" asp-route-id="@Model.NftViewModel.MarketData.TokenId.ToString()">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* next *@
+            <div class="form-group">
+                <label asp-for="AuctionSale.Price" class="control-label"></label>
+                <input asp-for="AuctionSale.Price" class="form-control" />
+                <span asp-validation-for="AuctionSale.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuctionSale.EmailAddress" class="control-label"></label>
+                <input asp-for="AuctionSale.EmailAddress" class="form-control" />
+                <span asp-validation-for="AuctionSale.EmailAddress" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Nft" asp-action="Index">Back to List</a>
+</div>

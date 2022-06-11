@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
+using Contracts.Contracts.NFTMarketplace.ContractDefinition;
 using Nethereum.StandardTokenEIP20.ContractDefinition;
 using Nethereum.UI;
-using NftProject.Contracts.NFTMarketplace.ContractDefinition;
 
 namespace Nethereum.Erc20.Blazor
 {
