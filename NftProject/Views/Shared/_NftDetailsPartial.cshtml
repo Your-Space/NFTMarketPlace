@@ -1,98 +1,45 @@
 @model NftViewItemModel
 
-<form asp-action="Detail" method="post" enctype="multipart/form-data">
-    <div class="p-4 rounded border row">
-        <div asp-validation-summary="ModelOnly" class="text-danger">
-
-        </div>
-        <div class="col-8">
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="NftMetadata.Name"></label>
-                </div>
-                <div class="col-8">
-                    <input type="hidden" asp-for="MarketData.TokenId" />
-                    <input asp-for="NftMetadata.Name" readonly="readonly" class="form-control" />
-                </div>
-                <span asp-validation-for="NftMetadata.Name" class="text-danger"></span>
-            </div>
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="NftMetadata.Price"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="NftMetadata.Price" readonly="readonly" class="form-control" />
-                </div>
-                <span asp-validation-for="NftMetadata.Price" class="text-danger"></span>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="NftMetadata.Description"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="NftMetadata.Description" readonly="readonly" class="form-control" />
-                </div>
-                <span asp-validation-for="NftMetadata.Description" class="text-danger"></span>
-            </div>
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="MarketData.Owner"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="MarketData.Owner" readonly="readonly" class="form-control" />
-                </div>
-                <span asp-validation-for="MarketData.Owner" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="MarketData.Seller"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="MarketData.Seller" readonly="readonly" class="form-control" />
-                </div>
-                <span asp-validation-for="MarketData.Seller" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="MarketData.Sold"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="MarketData.Sold" readonly="readonly" class="form-control" />
-                </div>
-                <span asp-validation-for="MarketData.Sold" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="MarketData.TokenId"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="MarketData.TokenId" readonly="readonly" class="form-control" />
-                </div>
-                <span asp-validation-for="MarketData.TokenId" class="text-danger"></span>
-            </div>
-            
-
-            <div class="form-group row">
-                <div class="col-4">
-
-                </div>
-                <div class="col-8">
-
-                </div>
-
-            </div>
-            <div class="form-group">
-                <a asp-action="Index" class="btn btn-success">Back to List</a>
-            </div>
-        </div>
-        <div class="col-1"></div>
-        <div class="col-3">
-            <img src="@Model.NftMetadata.FileUrl" width="100%" height="250px" style="border-radius: 5px;border: 1px solid #efefef" />
-        </div>
-
+<div class="p-4 rounded border row">
+    <div class="col-4">
+        <img src="@Model.NftMetadata.FileUrl" width="100%" height="500px" style="object-fit:contain; border-radius: 5px;border: 1px solid #efefef"/>
     </div>
-</form>
+    <div class="col-8">
+
+        <h1 class="mb-3">@($"{Model.NftMetadata.Name} #{Model.MarketData.TokenId.ToString()}")</h1>
+
+        <div class="col-lg-12">
+            <p class="m-0 p-0">@($"Owned by {Model.MarketData.Seller}")</p>
+            <hr class="p-0 m-0">
+        </div>
+            
+        <div class="col-lg-12 pt-4">
+            <h5>Nft Description</h5>
+            <span>@Model.NftMetadata.Description</span>
+            <hr class="m-0 pt-2 mt-2">
+        </div>
+        
+    </div>
+    <div class="col-lg-4 mt-3">
+    </div>
+    
+    <div class="col-lg-8 mt-3">
+        <div class="row">
+            <div class="col-lg-6 pb-2">
+                <span class="mb-6 w-100">@($"{Model.NftMetadata.Price} ethereum")</span>
+            </div>
+            <div class="col-lg-6">
+                <form asp-controller="Nft" asp-action="Index" asp- method="post" enctype="multipart/form-data">
+                    <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn w-100 btn-dark">Buy</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="form-group">
+    <a asp-action="Index" class="text-dark">Back to List</a>
+</div>
+
+

@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
+using Nethereum.Contracts.Standards.ERC721;
+using Nethereum.Web3;
 using Newtonsoft.Json;
 using NftContractHandler;
 using NftProject.Data;
@@ -377,7 +379,8 @@ namespace NftProject.Controllers
             List<MarketItem> marketItems = (await _testExample.Service.FetchMarketItemsQueryAsync()).ReturnValue1;
 
             MarketItem? marketItem = marketItems.FirstOrDefault(m => m.TokenId == BigInteger.Parse(id));
-
+            
+            
             if (marketItem == null)
                 return null;
             
@@ -400,6 +403,7 @@ namespace NftProject.Controllers
             string jsonText = reader.ReadToEnd();
 
             NftMetadataModel nftMetadata = JsonConvert.DeserializeObject<NftMetadataModel>(jsonText);
+            // nftMetadata.Price = Web3.Convert.FromWei(BigInteger.Parse(nftMetadata.Price)).ToString();
             return nftMetadata;
         }
     }

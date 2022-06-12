@@ -5,58 +5,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Auction actions </h1>
 
 <a asp-action="MyAuctions">My Auctions</a> 
+
 <a asp-action="MyBids">My Bids</a> 
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-
-<h4>My bids</h4>
-<h4>My Auctions. Can edit or delete.</h4> 
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TokenId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MinimalBidStep)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StartDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FinalDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TokenId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MinimalBidStep)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FinalDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
-

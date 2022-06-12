@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using Nethereum.ABI.Util;
+using Nethereum.Web3;
 using Newtonsoft.Json;
 using NftContractHandler;
 using NftProject.Data;
@@ -148,6 +149,7 @@ public class SalesController : Controller
         string jsonText = reader.ReadToEnd();
 
         NftMetadataModel NftMetadata = JsonConvert.DeserializeObject<NftMetadataModel>(jsonText);
+        // NftMetadata.Price = Web3.Convert.FromWei(BigInteger.Parse(NftMetadata.Price)).ToString();
         return NftMetadata;
     }
     

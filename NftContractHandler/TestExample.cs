@@ -84,11 +84,13 @@ public class TestExample
         var createTokenFunctionMessage = new CreateTokenFunction()
         {
             TokenURI = uri,
-            // Price = Web3.Convert.ToWei(price),
-            Price = price,
+            Price = Web3.Convert.ToWei(price),
+            //Price = price,
             AmountToSend = ListingPrice
         };
 
+        Console.WriteLine($"PRICE : {Web3.Convert.ToWei(price)}");
+        
         await Service.ContractHandler.SendRequestAndWaitForReceiptAsync(createTokenFunctionMessage);
     }
 
@@ -97,8 +99,8 @@ public class TestExample
         
         var createMarkerSaleMessage = new CreateMarketSaleFunction()
         {
-            TokenId = tokenId,
-            AmountToSend = price
+            TokenId = tokenId,  
+            AmountToSend = Web3.Convert.ToWei(price),
         };
 
         await Service.ContractHandler.SendRequestAndWaitForReceiptAsync(createMarkerSaleMessage);
@@ -110,7 +112,7 @@ public class TestExample
         var resellTokenMessage = new ResellTokenFunction()
         {
             TokenId = tokenId,
-            Price = price,
+            Price = Web3.Convert.ToWei(price),
             AmountToSend = ListingPrice
         };
 
@@ -123,7 +125,7 @@ public class TestExample
         var updatePrice = new UpdateNftPriceFunction()
         {
             TokenId = tokenId,
-            Price = price
+            Price = Web3.Convert.ToWei(price),
         };
 
         await Service.ContractHandler.SendRequestAndWaitForReceiptAsync(updatePrice);

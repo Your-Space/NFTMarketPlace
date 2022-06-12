@@ -3,10 +3,12 @@ using System.Numerics;
 using Contracts.Contracts.NFTMarketplace.ContractDefinition;
 using Ipfs.Http;
 using Microsoft.AspNetCore.Mvc;
+using Nethereum.Web3;
 using Newtonsoft.Json;
 using NftContractHandler;
 using NftProject.Data;
 using NftProject.Models;
+using Org.BouncyCastle.Ocsp;
 
 namespace NftProject.Controllers;
 
@@ -100,6 +102,13 @@ public class NftController : Controller
          if(id==null)
          {
              return NotFound();
+         }
+
+         string? price = Request.Query["Price"];
+         if (price != null)
+         {
+             await _testExample.CreateMarketSale(BigInteger.Parse(id), BigInteger.Parse(price));
+             return RedirectToAction(nameof(Index));
          }
 
          List<MarketItem> marketItems;
@@ -209,6 +218,7 @@ public class NftController : Controller
          string jsonText = reader.ReadToEnd();
 
          NftMetadataModel NftMetadata = JsonConvert.DeserializeObject<NftMetadataModel>(jsonText);
+         // NftMetadata.Price = Web3.Convert.FromWei(BigInteger.Parse(NftMetadata.Price)).ToString();
          return NftMetadata;
      }
 }
