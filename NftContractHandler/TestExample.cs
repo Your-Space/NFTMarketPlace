@@ -34,7 +34,7 @@ public class TestExample
     public TestExample()
     {
         //When private node was only started
-         //CreateResourceFile();
+         CreateResourceFile();
 
          ResourceReader reader = new ResourceReader(@".\NftResources.resources");
          IDictionaryEnumerator dict = reader.GetEnumerator();

@@ -5,37 +5,42 @@
 @{ string action = ViewContext.RouteData.Values["action"] as string;}
 
 <div class="col-4">
-    <div class="card mb-4">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-normal">
-                <label style="font-size: 23px;color: black">@Model.NftMetadata.Name</label>
-            </h4>
-        </div>
-        <img src="@Model.NftMetadata.FileUrl" alt="Card Image" class="card-img-top" style="height: 300px; object-fit: cover"/>
-        <div class="card-header">
-            <div class="d-flex justify-content-between align-Models-center">
-                <div class="btn-group">
-                    <label style="font-size: 20px;color: #000000"><b>Price : @Model.NftMetadata.Price</b></label>
-                </div>
-                <a asp-action="Detail" asp-route-id="@Model.MarketData.TokenId" asp-route-nftaction="@action" class="btn  pull-right btn-outline-dark">Details</a>
+    <a asp-action="Detail" asp-route-id="@Model.MarketData.TokenId" asp-route-nftaction="@action" class="snd">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">
+                    <label style="font-size: 23px;color: black">@Model.NftMetadata.Name</label>
+                </h4>
+            </div>
+            <img src="@Model.NftMetadata.FileUrl" alt="Card Image" class="card-img-top" style="height: 300px; object-fit: cover"/>
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-Models-center">
+                    <div class="btn-group">
+                        <label style="font-size: 20px;color: #000000"><b>Price : @Model.NftMetadata.Price</b></label>
+                    </div>
+                    @* <a asp-action="Detail" asp-route-id="@Model.MarketData.TokenId" asp-route-nftaction="@action" class="btn  pull-right btn-outline-dark">Details</a> *@
 
-                @if (action.Equals("Index"))
-                {
-                    if (Model.AuctionSale)
+                    @if (action.Equals("Index"))
                     {
-                        <a asp-controller="Auction" asp-action="MakeBid" asp-route-id="@Model.MarketData.TokenId.ToString()" class="btn pull-right btn-outline-dark">Bid</a>
+                        if (Model.AuctionSale)
+                        {
+                            <a asp-controller="Auction" asp-action="MakeBid" asp-route-id="@Model.MarketData.TokenId.ToString()" class="btn pull-right btn-dark" style="width: 90px;">Bid</a>
+                        }
+                        else
+                        {
+                            <form asp-action="Index" method="post" enctype="multipart/form-data">
+                                <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" style="width: 90px;" class="btn pull-right btn-dark">Buy</button>
+                            </form>
+                        }
                     }
-                    else
+                    else if (action.Equals("MyNfts"))
                     {
-                        <form asp-action="Index" method="post" enctype="multipart/form-data">
-                            <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn pull-right btn-outline-dark">Buy</button>
-                        </form>
+                        <a asp-controller="Sales" asp-action="Index"asp-route-id="@Model.MarketData.TokenId.ToString()" class="btn pull-right btn-dark" style="width: 90px;">List</a>
                     }
-                } else if (action.Equals("MyNfts"))
-                {
-                    <a asp-controller="Sales" asp-action="Index"asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn pull-right btn-outline-dark">List</a>
-                }
+                </div>
             </div>
         </div>
-    </div>
+    </a>
 </div>
+
+

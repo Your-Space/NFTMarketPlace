@@ -5,11 +5,16 @@
     Layout = "_Layout";
 }
 
-<h2 class="text-info">Nft Detail</h2>
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-dark">Nft detail</h2>
+    </div>
+    <div class="col-6 text-right" style="text-align: end;">
+        <a asp-action="ClassicSale" asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-dark btn-outline-white">Market Sale</a>
+        <a asp-action="AuctionSale" asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-dark btn-outline-white">Market Auction</a>
+    </div>
+
+</div>
 
 @Html.Partial("_NftDetailsPartial", Model)
-
-<a asp-action="ClassicSale" asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-success btn-outline-info">Market Sale</a>
-<a asp-action="AuctionSale" asp-route-id="@Model.MarketData.TokenId.ToString()"  class="btn btn-success btn-outline-info">Market Auction</a>
-
 

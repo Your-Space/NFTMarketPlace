@@ -29,7 +29,6 @@
     <ItemGroup>
       <Folder Include="Data\Migrations" />
       <Folder Include="Pages" />
-      <Folder Include="wwwroot\Images" />
     </ItemGroup>
 
     <ItemGroup>
@@ -51,6 +50,11 @@
       <_ContentIncludedByDefault Remove="Contracts\bin\NFTMarketplace.json" />
       <_ContentIncludedByDefault Remove="Contracts\package-lock.json" />
       <_ContentIncludedByDefault Remove="Contracts\package.json" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Content Remove="wwwroot\Images\photo5336779405864839874.jpg" />
     </ItemGroup>
 
 <!--    <ItemGroup>-->

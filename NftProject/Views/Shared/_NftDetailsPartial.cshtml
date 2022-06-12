@@ -1,15 +1,15 @@
 @model NftViewItemModel
 
-<div class="p-4 rounded border row">
+<div class="p-4 mt-4 rounded border row">
     <div class="col-4">
         <img src="@Model.NftMetadata.FileUrl" width="100%" height="500px" style="object-fit:contain; border-radius: 5px;border: 1px solid #efefef"/>
     </div>
     <div class="col-8">
 
         <h1 class="mb-3">@($"{Model.NftMetadata.Name} #{Model.MarketData.TokenId.ToString()}")</h1>
-
+    
         <div class="col-lg-12">
-            <p class="m-0 p-0">@($"Owned by {Model.MarketData.Seller}")</p>
+            <p class="m-0 p-0">@($"Owned by {Model.MarketData.Owner}")</p>
             <hr class="p-0 m-0">
         </div>
             
@@ -19,27 +19,48 @@
             <hr class="m-0 pt-2 mt-2">
         </div>
         
-    </div>
-    <div class="col-lg-4 mt-3">
-    </div>
-    
-    <div class="col-lg-8 mt-3">
-        <div class="row">
-            <div class="col-lg-6 pb-2">
-                <span class="mb-6 w-100">@($"{Model.NftMetadata.Price} ethereum")</span>
+        <div class="col-lg-12 pt-4">
+            <h5>Current price</h5>
+            <div class="col-lg-12">
+                <p class="m-0 p-0">@($"Listed by {Model.MarketData.Seller}")</p>
+                <hr class="p-0 m-0">
             </div>
-            <div class="col-lg-6">
-                <form asp-controller="Nft" asp-action="Index" asp- method="post" enctype="multipart/form-data">
-                    <button type="submit" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn w-100 btn-dark">Buy</button>
-                </form>
+
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <ul class="list-inline flg-list" style="font-weight: 600;" >
+                        <li class="list-inline-item">
+                            <img src="Images/ether (2).png" width="100%" height="50px" style="object-fit:contain;"/>
+                        </li>
+                                
+                        <li class="list-inline-item abv-txt">
+                            <h7>@($"{Model.NftMetadata.Price}")</h7>
+                            <h7>@($"Ethereum")</h7>
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="Images/ether (2).png" width="100%" height="50px" style="object-fit:contain;"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <form asp-controller="Nft" asp-action="Index" method="post" enctype="multipart/form-data">
+                        <button type="submit" style=" height: 50px" asp-route-id="@Model.MarketData.TokenId.ToString()" asp-route-price="@Model.NftMetadata.Price" class="btn w-100 btn-dark">Buy</button>
+                    </form>
+                </div>
             </div>
+            
+            
+            
+            
+            <hr class="m-0 pt-2 mt-2">
         </div>
+        
+
     </div>
 
 
 </div>
-<div class="form-group">
-    <a asp-action="Index" class="text-dark">Back to List</a>
-</div>
+
 
 
